@@ -1,7 +1,7 @@
 {
   "name": "XNitter Redirect",
   "description": "Redirects X (formerly Twitter) requests to Nitter, the privacy friendly alternative.",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "manifest_version": 2,
   "background": {
     "scripts": ["background.js"],

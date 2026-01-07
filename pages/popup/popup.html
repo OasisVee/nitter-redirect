@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -33,41 +33,46 @@
 
     <section class="options settings_block">
       <h1>Nitter Instance</h1>
-      <input
-        id="instance"
-        list="instance-list"
-        type="url"
-        placeholder="https://nitter.net"
-      />
+      <div class="input-group">
+        <input
+          id="instance"
+          list="instance-list"
+          type="url"
+          placeholder="https://nitter.net"
+        />
+        <button id="add-instance" class="button" type="button">Add</button>
+      </div>
+      <div id="status-message" class="status-message"></div>
       <datalist id="instance-list">
-        <option value="https://nitter.net"> </option>
-        <option value="https://nitter.snopyta.org"> </option>
-        <option value="https://nitter.42l.fr"> </option>
-        <option value="https://nitter.nixnet.services"> </option>
-        <option value="https://nitter.13ad.de"> </option>
-        <option value="https://tw.openalgeria.org"> </option>
-        <option value="https://nitter.pussthecat.org"> </option>
-        <option value="https://nitter.mastodont.cat"> </option>
-        <option value="https://nitter.dark.fail"> </option>
-        <option value="https://nitter.tedomum.net"> </option>
-        <option value="https://t.maisputain.ovh"> </option>
-        <option value="https://nitter.cattube.org"> </option>
-        <option value="https://nitter.fdn.fr"> </option>
-        <option value="https://nitter.1d4.us"> </option>
-        <option value="https://nitter.kavin.rocks"> </option>
-        <option value="https://nitter.libre.cx"> </option>
-        <option
-          value="http://3nzoldnxplag42gqjs23xvghtzf6t6yzssrtytnntc6ppc7xxuoneoad.onion"
-        >
-        </option>
-        <option
-          value="http://nitter.l4qlywnpwqsluw65ts7md3khrivpirse744un3x7mlskqauz5pyuzgqd.onion"
-        >
-        </option>
-        <option
-          value="http://nitterlgj3n5fgwesu3vxc5h67ruku33nqaoeoocae2mvlzhsu6k7fqd.onion"
-        ></option>
+        <option value="https://nitter.net"></option>
+        <option value="https://nitter.privacydev.net"></option>
+        <option value="https://nitter.it"></option>
+        <option value="https://nitter.at"></option>
+        <option value="https://nitter.perennialte.ch"></option>
+        <option value="https://nitter.moomoo.me"></option>
+        <option value="https://nitter.mint.lgbt"></option>
+        <option value="https://nitter.projectsegfau.lt"></option>
+        <option value="https://nitter.snopyta.org"></option>
+        <option value="https://nitter.42l.fr"></option>
+        <option value="https://nitter.nixnet.services"></option>
+        <option value="https://nitter.13ad.de"></option>
+        <option value="https://tw.openalgeria.org"></option>
+        <option value="https://nitter.pussthecat.org"></option>
+        <option value="https://nitter.mastodont.cat"></option>
+        <option value="https://nitter.dark.fail"></option>
+        <option value="https://nitter.tedomum.net"></option>
+        <option value="https://t.maisputain.ovh"></option>
+        <option value="https://nitter.cattube.org"></option>
+        <option value="https://nitter.fdn.fr"></option>
+        <option value="https://nitter.1d4.us"></option>
+        <option value="https://nitter.kavin.rocks"></option>
+        <option value="https://nitter.libre.cx"></option>
       </datalist>
+    </section>
+
+    <section class="options settings_block" id="custom-instances-block" style="display: none;">
+      <h1>My Instances</h1>
+      <ul id="custom-instance-list" class="instance-list"></ul>
     </section>
 
     <script src="./popup.js"></script>
